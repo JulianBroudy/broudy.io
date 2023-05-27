@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$database = "u696790422_when_drunk";
-$username = "u696790422_drunken";
-$password = "zQt&A7dE3E7Mg5z?";
+$servername = getenv('DB_SERVERNAME');
+$database = getenv('DB_DATABASE');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -21,12 +21,5 @@ while($row =mysqli_fetch_assoc($result))
 }
 echo json_encode($resultArray);
 
-
-
-// if (mysqli_query($conn, $sqlQuery)) {
-//       echo "New record created successfully";
-// } else {
-//       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-// }
 mysqli_close($conn);
 ?>
