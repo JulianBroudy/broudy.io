@@ -1,5 +1,4 @@
 lib/** linguist-detectable=true
 lib/** linguist-documentation=false
 lib/** linguist-generated=false
-lib/** linguist-vendored=false
 lib/js/* linguist-language=JAVASCRIPT
