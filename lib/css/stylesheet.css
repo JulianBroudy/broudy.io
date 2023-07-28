@@ -434,6 +434,11 @@ h1, h2 {
     text-justify: inter-word
 }
 
+#section2-white-box{
+    width: auto !important;
+    max-height: 89vh;
+}
+
 .split {
     font-size: calc(6px + (20 - 6) * ((100vw - 150px) / (1600 - 250))) !important;
 }
