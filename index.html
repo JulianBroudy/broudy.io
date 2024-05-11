@@ -16,10 +16,11 @@
 <meta content=1200 property=og:image:width>
 <meta content=630 property=og:image:height>
 <meta content=Portfolio. property=og:description>
-<link href=../lib/favicon_io/apple-touch-icon.png rel=apple-touch-icon sizes=180x180>
-<link href=../lib/favicon_io/favicon-32x32.png rel=icon sizes=32x32 type=image/png>
-<link href=../lib/favicon_io/favicon-16x16.png rel=icon sizes=16x16 type=image/png>
-<link href=../lib/favicon_io/site.webmanifest rel=manifest>
+<link href=./lib/favicon_io/apple-touch-icon.png rel=apple-touch-icon sizes=180x180>
+<link href=./lib/favicon_io/favicon-32x32.png rel=icon sizes=32x32 type=image/png>
+<link href=./lib/favicon_io/favicon-16x16.png rel=icon sizes=16x16 type=image/png>
+<link href=./lib/favicon_io/site.webmanifest rel=manifest>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -109,11 +110,11 @@
 <link href=https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css rel=stylesheet
       crossorigin=anonymous
       integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==">
-<link href=../lib/css/glide.core.min.css rel=stylesheet>
-<link href=../lib/css/glide.theme.min.css rel=stylesheet>
+<link href=./lib/css/glide.core.min.css rel=stylesheet>
+<link href=./lib/css/glide.theme.min.css rel=stylesheet>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js crossorigin=anonymous
         integrity="sha256-CnNQJd80jPuIDyeQRRq7+Wgt+++Kl0dZLt4ETNmxMIw="></script>
-<link href=../lib/css/stylesheet.css rel=stylesheet>
+<link href=./lib/css/stylesheet.css rel=stylesheet>
 <title>V2</title>
 <nav class="fixed-top navbar navbar-dark navbar-expand-md" id=myNav>
     <div class=container><a class="logo navbar-brand" href="">Julian<span>Broudy</span></a>
@@ -165,7 +166,8 @@
                         is achievable.</p>
                     <p><i><b>But life isn't written in code alone</b></i>. Away from the screen, I delve into
                         captivating books, sway to the rhythm of Bachata, and compose melodies on my piano - often
-                        during vibrant jamming sessions with friends. Amidst all these activities, rest assured, I do manage to
+                        during vibrant jamming sessions with friends. Amidst all these activities, rest assured, I do
+                        manage to
                         catch some sleep!</p>
                     <p><i><b>Curious to know more?</b></i> As you scroll down, you'll find some of my recent public
                         projects and ways to get in touch. I'm always up for a chat, so don't hesitate to reach out.
@@ -181,15 +183,16 @@
                     <ul class=glide__slides>
                         <li class="white-box glide__slide">
                             <div class=card-container ontouchstart='this.classList.toggle("hover")'>
-                                <div class=front style=background-image:url(../lib/images/gcm-system.png)>
+                                <div class=front style=background-image:url(./lib/images/gcm-system.png)>
                                     <div class=inner><p>GCM System</p><span>Hover for More</span></div>
                                 </div>
                                 <div class=back>
                                     <div class=inner><p>e-Commerce Platform with built-in CRM features such as
                                         creation & modification of maps for employees as well as browsing,
                                         subscribing, downloads, etc. for customers.
-                                    <p>Full-stack; multi-modular; client-server; UX focused; multi-threaded; desktop;
-                                        JavaFX; real-time notifications; and more.</div>
+                                        <p>Full-stack; multi-modular; client-server; UX focused; multi-threaded;
+                                            desktop;
+                                            JavaFX; real-time notifications; and more.</div>
                                     <a class=project-link
                                        href=https://github.com/JulianBroudy/gcm-system#gcm-system---a-maps-editor--store
                                        aria-label=GitHub target=_blank>
@@ -204,7 +207,7 @@
                             </div>
                         <li class="white-box glide__slide">
                             <div class=card-container ontouchstart='this.classList.toggle("hover")'>
-                                <div class=front style=background-image:url(../lib/images/skedaddle.png)>
+                                <div class=front style=background-image:url(./lib/images/skedaddle.png)>
                                     <div class=inner><p>Skedaddle</p><span>Hover for More</span></div>
                                 </div>
                                 <div class=back>
@@ -224,7 +227,7 @@
                             </div>
                         <li class="white-box glide__slide">
                             <div class=card-container ontouchstart='this.classList.toggle("hover")'>
-                                <div class=front style=background-image:url(../lib/images/broude.png)>
+                                <div class=front style=background-image:url(./lib/images/broude.png)>
                                     <div class=inner><p>broudy.io</p><span>Hover for More</span></div>
                                 </div>
                                 <div class=back>
@@ -261,7 +264,7 @@
     <div class="section fp-noscroll" id=section4>
         <div class="section-container container">
             <div class=white-box>
-                <form action=../lib/form-to-email.php method=post>
+                <form action=./lib/form-to-email.php method=post id="contact-form">
                     <div class=form-row>
                         <div class="form-group col-md-6"><label for=inputEmail>Email</label><input class=form-control
                                                                                                    id=inputEmail
@@ -281,9 +284,7 @@
                                                                                            id=inputMessage
                                                                                            name=inputMessage
                                                                                            rows=3></textarea></div>
-                    <div class=form-row>
-                        <div class=g-recaptcha data-sitekey=6LfWKrAZAAAAAIj_EwVht8TlREqlvBG01Cz5mQ8O></div>
-                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Lex1dgpAAAAANXJdpae4hhLJ6sTZ-vqUFPxHk5i" style="pointer-events: all"></div>
                     <button class="btn btn-block btn-lg btn-primary" type=submit id=submit-button>Send</button>
                 </form>
             </div>
@@ -302,7 +303,7 @@
         integrity="sha512-pci5WG2+7QnpsinWWpGUd3RgI61fU1bWlQQQegC2mVqwOQC/+Xp0ROGO0AYB6dvoLBYRxwm+t+DWOVRkxmlcdQ=="></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/pts/0.10.5/pts.min.js crossorigin=anonymous
         integrity="sha512-uHA0Fm27FsjOUz5aS/5StEnRvBIYotMEDNYZU40T05NT3KCdkI3D7H4FGEvDjArhv+w+/ouzKtXMFWjAb5BcFQ=="></script>
-<script src=../lib/js/canvas.js></script>
+<script src=./lib/js/canvas.js></script>
 <script>const navBar = document.querySelector("#myNav");
 const overlay = document.querySelector("#overlay");
 var currentSection;
@@ -351,7 +352,7 @@ if (sessionStorage.getItem("initialAlert") !== "wasShown") {
     fullpage_api.setAllowScrolling(false);
     fullpage_api.setKeyboardScrolling(false);
 }</script>
-<script src=../lib/js/index.js></script>
+<script src=./lib/js/index.js></script>
 <script>new Glide(".glide", {
     type: "carousel",
     startAt: 1,
